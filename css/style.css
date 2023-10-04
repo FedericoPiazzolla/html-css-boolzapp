@@ -246,3 +246,12 @@ img {
     width: 85%;
   }
 }
+
+/* CHAT CONTAINER */
+.chat-container {
+  width: 100%;
+  height: calc(100% - 120px);
+  background-image: url(../img/mine.jpg);
+}
+
+/* FOOTER RIGHT BLOCK */
