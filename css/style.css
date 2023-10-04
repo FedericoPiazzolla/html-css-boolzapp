@@ -42,7 +42,7 @@ img {
 
 /* LEFT BLOCK */
 .left-block {
-  width: 40%;
+  width: 35%;
   height: 100%;
   /* debug */
   border: 1px solid blue;
@@ -147,7 +147,7 @@ img {
 .contacts {
   width: 100%;
   height: calc(100% - 180px);
-  overflow-y: scroll;
+  overflow-y: auto;
   /* debug */
   background-color: blanchedalmond;
 }
@@ -197,9 +197,52 @@ img {
 
 /* RIGHT-BLOCK */
 .right-block {
-  width: 60%;
+  width: 65%;
   height: 100%;
   /* debug */
   border: 1px solid green;
 }
-  
+
+/* RIGTH BLOCK TABLET */
+@media screen and (max-width:768px) {
+  .right-block {
+    width: 90%;
+  }
+}
+
+/* RIGHT BLOCK SMARTPHONE */
+@media screen and (max-width:480px) {
+  .right-block {
+    width: 100%;
+  }
+}
+
+/* HEADER RIGHT */
+.header-profile-right {
+  width: 15%;
+  /* debug */
+  background-color: whitesmoke;
+}
+
+.header-profile-text {
+  width: 65%;
+
+  /* debug */
+  background-color: blueviolet;
+}
+
+.right-list {
+  width: 20%;
+  align-self: flex-end;
+}
+
+/* HEADER RIGHT: SMARTPHONE */
+@media screen and (max-width:480px) {
+  .right-list {
+    display: none;
+  }
+
+  .header-profile-text {
+    width: 85%;
+  }
+}
