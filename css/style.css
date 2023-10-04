@@ -194,3 +194,12 @@ img {
     width: 100%;
   }
 }
+
+/* RIGHT-BLOCK */
+.right-block {
+  width: 60%;
+  height: 100%;
+  /* debug */
+  border: 1px solid green;
+}
+  
