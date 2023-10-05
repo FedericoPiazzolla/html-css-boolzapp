@@ -62,10 +62,6 @@ body {
 
 .header-profile {
   width: 30%;
-
-  /* debug */
-  height: 100%;
-  background-color: whitesmoke;
 }
 
 .header-list {
