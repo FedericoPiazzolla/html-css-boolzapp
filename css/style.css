@@ -20,10 +20,6 @@ img {
   border-left: 1px solid #b2b2b3;
 }
 
-:root {
-
-}
-
 .header-block {
   width: 100%;
   height: 60px;
@@ -212,6 +208,11 @@ body {
   padding-top: .5rem;
 }
 
+.contacts-card:hover {
+  filter: brightness(.9);
+  cursor: pointer;
+}
+
 .avatar-card {
   width: 25%;
 }
@@ -269,7 +270,7 @@ body {
 
 /* HEADER RIGHT */
 .header-profile-right {
-  width: 15%;
+  width: 70px;
 }
 
 .avatar {
@@ -337,29 +338,32 @@ footer {
   width: 100%;
   height: 60px;
   display: flex;
-  /* debug */
-  background-color: darkgray;
+  align-items: center;
+  background-color: #f3eeea;
 }
 
-.emoji{
-  width: 15%;
+footer a {
+  color: inherit;
+}
 
-  /* debug */
-  background-color: beige;
+.emoji, .vocals{
+  width: 15%;
+  justify-content: center;
+  color: #b2b2b3;
+  font-size: 1.3rem;
 }
 
 .text-area-footer {
   width: 70%;
-
-  /* debug */
-  background-color: darksalmon;
+  height: 75%;
 }
 
-.vocals {
-  width: 15%;
-
-  /* debug */
-  background-color: beige;
+.text-area-footer > input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-left: .5rem;
+  border-radius: .4rem;
 }
 
 /* FOOTER RIGHT: SMARTPHONE */
