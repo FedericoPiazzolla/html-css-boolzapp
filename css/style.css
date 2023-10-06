@@ -388,8 +388,9 @@ body {
 .chevron-hide-list{
   color: black;
   right: 20px;
+  top: 30px;
   background-color: white;
-  width: 180px;
+  width: 150px;
   text-align: center;
   position: absolute;
   display: none;
@@ -407,11 +408,14 @@ body {
 
 .chevron-hide-list ul li {
   padding: .6rem .8rem;
+  font-size: .8rem;
 }
 
-.fa-solid.fa-chevron-down + .chevron-hide-list:hover{
+i.fa-solid.fa-chevron-down:hover + 
+.chevron-hide-list{
   display: block !important;
 }
+
 
 .time-message {
   align-self: flex-end;
