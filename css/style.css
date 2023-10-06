@@ -16,6 +16,15 @@ img {
   margin: 3vh auto;
 }
 
+/* Container 768px */
+@media screen and (max-width:768px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .border-left {
   border-left: 1px solid #b2b2b3;
 }
@@ -369,10 +378,14 @@ footer a {
 /* FOOTER RIGHT: SMARTPHONE */
 @media screen and (max-width:480px) {
   .emoji, .vocals {
-    width: 0;
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
   }
 
   .text-area-footer {
-    width: 100%;
+    width: 90%;
   }
 }
