@@ -362,6 +362,7 @@ body {
   min-width: 250px;
   max-width: 65%;
   display: flex;
+  position: relative;
 }
 
 .message-box.send {
@@ -376,11 +377,40 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  color: #b2b2b3;
+  color: gray;
 }
 
 .chevron {
   text-align: right;
+  cursor: pointer;
+}
+
+.chevron-hide-list{
+  color: black;
+  right: 20px;
+  background-color: white;
+  width: 180px;
+  text-align: center;
+  position: absolute;
+  display: none;
+}
+
+.chevron-hide-list.right-chevron {
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+
+.chevron-hide-list ul {
+  list-style-type: none;
+}
+
+.chevron-hide-list ul li {
+  padding: .6rem .8rem;
+}
+
+.fa-solid.fa-chevron-down + .chevron-hide-list:hover{
+  display: block !important;
 }
 
 .time-message {
