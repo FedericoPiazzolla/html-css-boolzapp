@@ -340,6 +340,59 @@ body {
   height: calc(100% - 120px);
   background-image: url(../img/mine.jpg);
   overflow-y: auto;
+  padding: 2rem 1rem;
+}
+
+.message-row {
+  display: flex;
+  margin-bottom: .7rem;
+}
+
+.message-row.send {
+  justify-content: flex-end;
+}
+
+.message-row.recived {
+  justify-content: flex-start;
+}
+
+.message-box {
+  padding: .8rem;
+  border-radius: .5rem;
+  min-width: 250px;
+  max-width: 65%;
+  display: flex;
+}
+
+.message-box.send {
+  background-color: #d5f9ba;
+}
+
+.message-box.recived {
+  background-color: white;
+}
+
+.message-list {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  color: #b2b2b3;
+}
+
+.chevron {
+  text-align: right;
+}
+
+.time-message {
+  align-self: flex-end;
+  font-size: .7rem;
+}
+
+/* MEDIA QUERY TABLET */
+@media screen and (max-width: 768px) {
+  .chat-container {
+    padding: 2rem 3rem;
+  }
 }
 
 /* FOOTER RIGHT BLOCK */
